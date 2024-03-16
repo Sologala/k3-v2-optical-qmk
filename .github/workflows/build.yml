@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Clone SonixQMK
-        run: git clone https://github.com/SonixQMK/qmk_firmware.git
+        run: git clone https://github.com/SonixQMK/qmk_firmware.git --branch sn32_master
       - name: Install qmk deps
         run: cd qmk_firmware && ./util/qmk_install.sh && python3 -m pip install qmk
       - name: fix gcc
