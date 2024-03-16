@@ -15,8 +15,6 @@ jobs:
         run: sudo bash .github/scripts/update-gcc10-ubuntu.sh
       - name: Install git submodules
         run: cd qmk_firmware && make git-submodule
-      - name: mkdir keychron k3 folder
-        run: mkdir -p qmk_firmware/keyboards/keychron/k3/
       - name: Copy custom keymaps
         run: cp -rp keyboards/keychron/k3/keymaps/iso_seyahdoo qmk_firmware/keyboards/keychron/k3/keymaps
       - name: Copy custom config
